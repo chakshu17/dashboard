@@ -1,19 +1,61 @@
-<mat-nav-list>
-  <a mat-list-item routerLink="/Home">
-    <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
-  </a>
-  <a mat-list-item routerLink="/TreatmentPage">
-    <mat-icon>medical_services</mat-icon>
-    <span class="nav-caption">Treatments</span>
-  </a>
+<div style="padding: 20px; font-size: 30px;" fxLayout>
+  <mat-icon>dashboard</mat-icon> &nbsp;
+  <h2>Company</h2>
+</div> <hr>
 
-  <a mat-list-item routerLink="/aboutus">
-    <mat-icon>account_circle</mat-icon>
-    <span class="nav-caption">About Us</span>
-  </a>
+<br>
 
-  <a mat-list-item routerLink="/contactus">
-    <mat-icon>contacts</mat-icon>
-    <span class="nav-caption">Contact Us</span>
-  </a>
+<mat-nav-list role="list">
+  <mat-list-item role="listitem"
+><img src="assets/Images/user.png" >
+  <span class="nav-caption1"> &nbsp; Company</span></mat-list-item
+> <br><br>
+  <mat-list-item role="listitem"
+  ><a routerLink="/home" (click)="sidenavclose()"
+    ><mat-icon>home</mat-icon>
+    <span class="nav-caption">Home</span></a
+  ></mat-list-item
+>
+
+  <mat-list-item role="listitem">
+    <mat-icon>edit</mat-icon>
+    <button mat-button [matMenuTriggerFor]="menu">From</button>
+    <mat-icon>arrow_drop_down</mat-icon>
+    <mat-menu #menu="matMenu">
+      <a routerLink="/templateform" (click)="sidenavclose()">
+        <button mat-menu-item>General Form</button></a
+      >
+      <a routerLink="/templateform" (click)="sidenavclose()">
+        <button mat-menu-item>Validator Form</button>
+      </a>
+    </mat-menu>
+  </mat-list-item>
+
+  <mat-list-item role="listitem">
+    <mat-icon>apps</mat-icon>
+    <button mat-button [matMenuTriggerFor]="menus">UI Elements</button>
+    <mat-icon>arrow_drop_down</mat-icon>
+
+    <mat-menu #menus="matMenu">
+      <a routerLink="/icons" (click)="sidenavclose()">
+        <button mat-menu-item>Icons</button></a
+      >
+      <a routerLink="/card" (click)="sidenavclose()">
+        <button mat-menu-item>Card</button>
+      </a>
+      <a routerLink="/gallary" (click)="sidenavclose()">
+        <button mat-menu-item>Gallery</button>
+      </a>
+      <a routerLink="/table" (click)="sidenavclose()">
+        <button mat-menu-item>Table</button>
+      </a>
+    </mat-menu>
+  </mat-list-item>
+
+  <mat-list-item role="listitem"
+    ><a routerLink="/typography" (click)="sidenavclose()"
+      ><mat-icon>card_membership</mat-icon>
+      <span class="nav-caption">Typography</span></a
+    ></mat-list-item
+  >
 </mat-nav-list>

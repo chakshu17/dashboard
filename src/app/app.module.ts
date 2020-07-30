@@ -15,6 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +31,7 @@ import { CardComponent } from './dashboard/UIelements/card/card.component';
 import { TableComponent } from './dashboard/UIelements/table/table.component';
 import { TypoghraphyComponent } from './dashboard/typography/typoghraphy/typoghraphy.component';
 import { ValidatorformComponent } from './dashboard/form/validatorform/validatorform.component';
+import { ToolbarComponent } from './Navigation/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,7 @@ import { ValidatorformComponent } from './dashboard/form/validatorform/validator
     TableComponent,
     TypoghraphyComponent,
     ValidatorformComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +64,9 @@ import { ValidatorformComponent } from './dashboard/form/validatorform/validator
     NgImageSliderModule,
     MatCardModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
