@@ -28,6 +28,7 @@ import { GalaryComponent } from './dashboard/UIelements/galary/galary.component'
 import { CardComponent } from './dashboard/UIelements/card/card.component';
 import { TableComponent } from './dashboard/UIelements/table/table.component';
 import { TypoghraphyComponent } from './dashboard/typography/typoghraphy/typoghraphy.component';
+import { ValidatorformComponent } from './dashboard/form/validatorform/validatorform.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { TypoghraphyComponent } from './dashboard/typography/typoghraphy/typoghr
     CardComponent,
     TableComponent,
     TypoghraphyComponent,
+    ValidatorformComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 <div fxLayout="column" fxLayoutAlign="center center" style="padding: 30px;" fxHide.lt-md>
-  <h1> General Form</h1>
+  <h1>Validator Form</h1>
+  <form #f="ngForm" >
   <mat-card fxLayout="column" fxLayoutAlign="center center">
     <mat-card-content>
       <form fxLayout="column" fxLayoutAlign="center center">
@@ -9,6 +10,8 @@
             class="input"
             matInput
             required
+            minlength="8"
+            maxlength="32"
             type="text"
             placeholder="Enter the Name"
             ngModel
@@ -22,6 +25,8 @@
             class="input"
             matInput
             required
+            minlength="8"
+            maxlength="32"
             type="text"
             placeholder="Enter the Username"
             ngModel
@@ -77,6 +82,8 @@
             class="input"
             matInput
             required
+            minlength="8"
+            maxlength="32"
             type="password"
             placeholder="Enter the Passowrd"
             ngModel
@@ -118,16 +125,17 @@
           <button mat-raised-button color="accent" type="submit">
             Cancel
           </button>
-          <button mat-raised-button color="primary" type="submit">
+          <button mat-raised-button color="primary"   type="submit">
             Submit
           </button>
         </mat-card-actions>
       </form>
     </mat-card-content>
   </mat-card>
+</form>
 </div>
 <div fxLayout="column" fxLayoutAlign="center center" style="padding: 30px;" fxHide.gt-md>
-  <h1> General Form</h1>
+  <h1>Validator Form</h1>
   <mat-card class="mat" fxLayout="column" fxLayoutAlign="center center">
     <mat-card-content>
       <form fxLayout="column" fxLayoutAlign="center center">
@@ -137,6 +145,8 @@
             class="input"
             matInput
             required
+            minlength="8"
+            maxlength="32"
             type="text"
             placeholder="Enter the Name"
             ngModel
@@ -150,6 +160,8 @@
             class="input"
             matInput
             required
+            minlength="8"
+            maxlength="32"
             type="text"
             placeholder="Enter the Username"
             ngModel
@@ -205,6 +217,8 @@
             class="input"
             matInput
             required
+            minlength="8"
+            maxlength="32"
             type="password"
             placeholder="Enter the Passowrd"
             ngModel
@@ -219,6 +233,7 @@
             class="input"
             matInput
             required
+
             type="number"
             placeholder="Enter the Ph.No"
             ngModel
@@ -246,7 +261,7 @@
           <button mat-raised-button color="accent" type="submit">
             Cancel
           </button>
-          <button mat-raised-button color="primary" type="submit">
+          <button mat-raised-button  color="primary" type="submit">
             Submit
           </button>
         </mat-card-actions>
