@@ -1,0 +1,61 @@
+<div>
+  <div fxLayout="column" fxLayoutAlign="center center" fxHide.lt-md>
+    <h1 class="heading">Galary</h1>
+    <br />
+
+    <section fxLayoutAlign="center" fxLayoutGap="50px">
+      <img src="assets/Images/mian2.jpg" style="width: 30%;" />
+      <img src="assets/Images/main02.jpg" style="width: 30%;" />
+    </section>
+
+    <div fxLayout="column" fxLayoutAlign="center center" fxHide.lt-md>
+      <h1 class="heading">Galary</h1>
+      <br />
+
+      <div style="width: 800px; height: 70%;">
+        <ng-image-slider
+          [images]="imageObject"
+          [infinite]="true"
+          [autoSlide]="1"
+          [imageSize]="{ width: '100%', height: 500 }"
+          slideImage="1"
+          #nav
+        ></ng-image-slider>
+      </div>
+      <br />
+    </div>
+  </div>
+
+  <!-- Mobile View -->
+  <div
+    fxHide.gt-md
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="20px"
+  >
+    <h1 class="mobheading">Galary</h1>
+    <section fxLayout="column" fxLayoutAlign="center" fxLayoutGap="30px">
+      <img src="assets/Images/mian2.jpg" style="height: 120%; width: 95%;" />
+      <img src="assets/Images/main02.jpg" style="height: 120%; width: 95%;" />
+    </section>
+  </div>
+  <div
+    fxHide.gt-md
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="20px"
+  >
+    <h1 class="mobheading">Galary</h1>
+    <div style="width: 100%; height: 50%;">
+      <ng-image-slider
+        [images]="imageObject"
+        [infinite]="true"
+        [autoSlide]="1"
+        [imageSize]="{ width: '100%', height: 300 }"
+        slideImage="1"
+        #nav
+      ></ng-image-slider>
+    </div>
+  </div>
+<br>
+</div>
