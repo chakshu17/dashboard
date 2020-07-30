@@ -1,9 +1,14 @@
 <mat-toolbar>
-  <div >
+  <div>
     <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
+      <mat-icon style="width: 30px; height: 25px;">menu</mat-icon>
     </button>
   </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end"> <ul fxLayout class="navigation-items" fxLayoutGap="20px" >
+    <li><img src="assets/Images/mail.png" style="width: 50px; height: 50px;"/></li>
+    <li><img src="assets/Images/user.png" style="width: 40px; height: 40px; padding-top: 7px;" /></li>
+    <li style="padding-top: 10px; font-size: 24px;">John Doe<mat-icon>arrow_drop_down</mat-icon></li>
 
+  </ul>
+  </div>
 </mat-toolbar>
-
