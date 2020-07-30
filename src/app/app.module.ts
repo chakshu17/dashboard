@@ -15,13 +15,15 @@ import { HomeComponent } from './dashboard/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './Navigation/sidenav/sidenav.component';
 import { TemplateformComponent } from './dashboard/form/templateform/templateform.component';
+import { IconsComponent } from './dashboard/UIelements/icons/icons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SidenavComponent,
-    TemplateformComponent
+    TemplateformComponent,
+    IconsComponent,
   ],
   imports: [
     BrowserModule,
