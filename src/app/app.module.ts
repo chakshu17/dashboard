@@ -12,6 +12,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +26,7 @@ import { IconsComponent } from './dashboard/UIelements/icons/icons.component';
 import { CalenderComponent } from './dashboard/UIelements/calender/calender.component';
 import { GalaryComponent } from './dashboard/UIelements/galary/galary.component';
 import { CardComponent } from './dashboard/UIelements/card/card.component';
+import { TableComponent } from './dashboard/UIelements/table/table.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,7 @@ import { CardComponent } from './dashboard/UIelements/card/card.component';
     CalenderComponent,
     GalaryComponent,
     CardComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +54,9 @@ import { CardComponent } from './dashboard/UIelements/card/card.component';
     MatButtonModule,
     FlexLayoutModule,
     NgImageSliderModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent],
