@@ -27,6 +27,7 @@ import { CalenderComponent } from './dashboard/UIelements/calender/calender.comp
 import { GalaryComponent } from './dashboard/UIelements/galary/galary.component';
 import { CardComponent } from './dashboard/UIelements/card/card.component';
 import { TableComponent } from './dashboard/UIelements/table/table.component';
+import { TypoghraphyComponent } from './dashboard/typography/typoghraphy/typoghraphy.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TableComponent } from './dashboard/UIelements/table/table.component';
     GalaryComponent,
     CardComponent,
     TableComponent,
+    TypoghraphyComponent,
   ],
   imports: [
     BrowserModule,
