@@ -1,4 +1,4 @@
-<h1 class="heading">Typograghy</h1>
+<!-- <h1 class="heading">Typograghy</h1>
 <div
   fxLayout="column"
   fxLayoutAlign="center center"
@@ -70,6 +70,10 @@
   </section>
 
   <br />
+
+  <h3>Line Graph</h3>
+
+
 </div>
 <div
   fxLayout="column"
@@ -141,4 +145,22 @@
   </section>
 
   <br />
+
+</div> -->
+<div *ngIf="chart">
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>
+<div style="display: block">
+  <canvas
+    mdbChart
+    [chartType]="chartType"
+    [datasets]="chartDatasets"
+    [labels]="chartLabels"
+    [colors]="chartColors"
+    [options]="chartOptions"
+    [legend]="true"
+    (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)"
+  >
+  </canvas>
 </div>

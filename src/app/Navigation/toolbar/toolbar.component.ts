@@ -10,6 +10,7 @@ export class ToolbarComponent implements OnInit {
   constructor() { }
   @Output() sidenavToggle = new EventEmitter<void>();
   ngOnInit(): void {
+
   }
   onToggleSidenav() {
     this.sidenavToggle.emit();

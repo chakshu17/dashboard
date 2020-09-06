@@ -9,6 +9,7 @@ import { GalaryComponent } from './dashboard/UIelements/galary/galary.component'
 import { IconsComponent } from './dashboard/UIelements/icons/icons.component';
 import { TableComponent } from './dashboard/UIelements/table/table.component';
 import { CalenderComponent } from './dashboard/UIelements/calender/calender.component';
+import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'gallary',component:GalaryComponent},
   {path:'icons',component:IconsComponent},
   {path:'table',component:TableComponent},
+  {path:'user',component:UserComponent},
 
 ];
 

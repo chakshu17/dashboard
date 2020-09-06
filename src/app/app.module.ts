@@ -18,6 +18,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 
+
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './dashboard/home/home.component';
@@ -32,6 +35,7 @@ import { TableComponent } from './dashboard/UIelements/table/table.component';
 import { TypoghraphyComponent } from './dashboard/typography/typoghraphy/typoghraphy.component';
 import { ValidatorformComponent } from './dashboard/form/validatorform/validatorform.component';
 import { ToolbarComponent } from './Navigation/toolbar/toolbar.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,7 @@ import { ToolbarComponent } from './Navigation/toolbar/toolbar.component';
     TypoghraphyComponent,
     ValidatorformComponent,
     ToolbarComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,6 +72,7 @@ import { ToolbarComponent } from './Navigation/toolbar/toolbar.component';
     MatPaginatorModule,
     MatToolbarModule,
     MatMenuModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
