@@ -18,9 +18,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 
-
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './dashboard/home/home.component';
@@ -72,7 +69,6 @@ import { UserComponent } from './user/user.component';
     MatPaginatorModule,
     MatToolbarModule,
     MatMenuModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent],
